@@ -54,6 +54,3 @@ The script will generate images representing the trade network with communities 
 
 # Conclusion
 This project allows for the analysis and visualization of global trade networks using different community detection algorithms. By leveraging the power of graph-tool, networkx, and igraph, it enables the detection of meaningful groupings of countries based on trade agreements, providing insights into the global trade structure.
-
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
