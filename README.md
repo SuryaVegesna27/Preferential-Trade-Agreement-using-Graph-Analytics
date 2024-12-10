@@ -1,56 +1,63 @@
-# Preferntial Trade Network Analysis with Community Detection
-This project performs analysis and community detection on a global trade network using graph-tool and Louvain's method for detecting community structures, along with the Girvan-Newman algorithm for modularity. It provides visualizations and statistical analyses of trade relations, highlighting the identification of communities in the network and evaluating modularity.
+Preferential Trade Network Analysis with Community Detection
+Explore the dynamics of global trade through network analysis and community detection. This project leverages advanced graph analysis techniques to identify and visualize community structures within international trade networks, providing insights into trade relations and their evolution.
 
-# Prerequisites
-Before running the project, ensure you have Python and the following libraries installed:
-Required Libraries:
+🔍 Project Overview
+This analysis employs various graph-based community detection algorithms, including Louvain's Method, Girvan-Newman Algorithm, and Graph-tool Blockmodeling, to uncover meaningful groupings of countries based on trade agreements. Key outcomes include:
+
+Community Identification: Detect distinct trade communities and evaluate modularity.
+Visualizations: Generate compelling graphical representations of trade relations and detected communities.
+Statistical Analysis: Measure network properties and modularity scores for deeper insights.
+📦 Prerequisites
+Ensure you have Python installed along with the following libraries:
+
 graph-tool: For advanced graph analysis and visualization.
-pandas: For data handling.
-numpy: For numerical operations.
-matplotlib: For graph plotting.
-networkx: For community detection with Louvain algorithm.
-community: A package for applying the Louvain method.
+pandas: For data handling and manipulation.
+numpy: For numerical computations.
+matplotlib: For creating plots and visualizations.
+networkx: For implementing the Louvain algorithm.
+community: For applying Louvain's method to detect communities.
 python-igraph: For Girvan-Newman community detection.
+📂 Project Structure
+1. Graph Construction
+Build a graph where nodes represent countries and edges represent trade agreements.
+Annotate edges with properties such as trade depth and agreement types.
+2. Community Detection Algorithms
+Graph-tool Blockmodel: Leverages blockmodeling to identify community structures.
+Louvain Method: Utilizes modularity maximization for community detection.
+Girvan-Newman Algorithm: Applies a hierarchical approach using edge betweenness.
+3. Visualization
+Use graph-tool for graph layout and drawing.
+Highlight nodes (countries) and edges (agreements) with community-specific colors.
+🚀 Steps to Run the Project
+1. Prepare Graph Data
+Construct a graph (trade_graph) where:
+Nodes = Countries.
+Edges = Trade agreements.
+Ensure edge properties like trade depth and agreement types are included.
+2. Run Community Detection
+Blockmodel (Graph-tool): Apply blockmodeling for structural analysis.
+Louvain Method (NetworkX): Convert the graph to a NetworkX format and apply the Louvain algorithm.
+Girvan-Newman (igraph): Use igraph for hierarchical community detection.
+3. Visualization
+Generate visual representations using graph-tool’s graph_draw() function.
+Highlight communities with distinct colors and annotate nodes with country names.
+4. Analyze Subsets
+Split the graph into subsets (e.g., agreements before/after 2000) for comparative analysis.
+5. Output
+Number of Communities: Detected by each algorithm.
+Modularity Scores: For Louvain and Girvan-Newman.
+Community Visualizations: Images of the trade network with communities distinguished.
+Community Lists: Countries grouped into communities.
+🖼️ Visualization
+The project produces intuitive visualizations, such as:
 
-# Project Structure
-Graph Construction: The core of the analysis is based on a graph representing trade relations between countries. Each node represents a country, and each edge represents a trade agreement between countries. Various properties like trade depth and agreement types are associated with edges.
+Trade networks with communities differentiated by color.
+Subset-specific visualizations for comparative analysis.
+📊 Key Features
+Comprehensive trade network analysis using multiple community detection algorithms.
+Intuitive visualizations of global trade dynamics.
+Modularity scoring to assess community cohesiveness.
+Insights into the evolution of trade relations over time.
+🤝 Conclusion
+This project provides a robust framework for analyzing and visualizing global trade networks. By combining the power of graph-tool, NetworkX, and igraph, it delivers meaningful insights into international trade structures and the evolving patterns of preferential trade agreements.
 
-# Community Detection Algorithms: The project implements multiple community detection algorithms:
-
-Graph-tool Blockmodel: Uses blockmodeling to find community structures.
-Louvain Method: Applies modularity maximization to identify communities.
-Girvan-Newman: A divisive hierarchical algorithm that detects communities based on edge betweenness.
-Visualization: Graphs and communities are visualized using graph-tool's layout and drawing functions, with support for showing node attributes (e.g., country names).
-
-# Steps to Run the Project
-# 1. Prepare Graph Data
-Before running the community detection algorithms, you must first build the trade graph (trade_graph) from your data. You should have a graph structure where nodes represent countries, and edges represent trade relationships.
-
-# 2. Run Community Detection
-Blockmodel Community Detection (Graph-tool)
-
-# Louvain Method (NetworkX)
-For community detection using Louvain's method, convert your graph-tool graph to a NetworkX graph and apply the Louvain algorithm
-
-# Girvan-Newman Algorithm (igraph)
-For Girvan-Newman community detection, use the igraph package to apply edge betweenness
-
-# 3. Visualization
-The code provides functionality to visualize the communities and the overall trade graph using graph-tool's graph_draw() function.
-
-# 4. Run for Different Graph Subsets
-Split the graph into different subsets based on conditions such as agreement years (e.g., before and after 2000).
-
-# 5. Output
-For each algorithm (blockmodel, Louvain, Girvan-Newman), the script will output:
-
-Number of communities detected.
-Modularity score (for Louvain and Girvan-Newman).
-Visualization of the trade network with communities.
-List of countries in each community.
-
-# Visualization:
-The script will generate images representing the trade network with communities visually distinguished.
-
-# Conclusion
-This project allows for the analysis and visualization of global trade networks using different community detection algorithms. By leveraging the power of graph-tool, networkx, and igraph, it enables the detection of meaningful groupings of countries based on trade agreements, providing insights into the global trade structure.
