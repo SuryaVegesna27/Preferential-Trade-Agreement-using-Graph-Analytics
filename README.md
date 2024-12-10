@@ -16,11 +16,17 @@ Statistical Analysis: Measure network properties and modularity scores for deepe
 Ensure you have Python installed along with the following libraries:
 
 graph-tool: For advanced graph analysis and visualization.
+
 pandas: For data handling and manipulation.
+
 numpy: For numerical computations.
+
 matplotlib: For creating plots and visualizations.
+
 networkx: For implementing the Louvain algorithm.
+
 community: For applying Louvain's method to detect communities.
+
 python-igraph: For Girvan-Newman community detection.
 
 # 📂 Project Structure
