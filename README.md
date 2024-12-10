@@ -6,11 +6,11 @@ This analysis employs various graph-based community detection algorithms, includ
 
 # Key outcomes include:
 
-# Community Identification: Detect distinct trade communities and evaluate modularity.
+Community Identification: Detect distinct trade communities and evaluate modularity.
 
-# Visualizations: Generate compelling graphical representations of trade relations and detected communities.
+Visualizations: Generate compelling graphical representations of trade relations and detected communities.
 
-# Statistical Analysis: Measure network properties and modularity scores for deeper insights.
+Statistical Analysis: Measure network properties and modularity scores for deeper insights.
 
 # 📦 Prerequisites
 Ensure you have Python installed along with the following libraries:
